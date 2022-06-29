@@ -1,0 +1,25 @@
+{
+    "name": "binsecscripting",
+    "displayName": "BinsecScripting",
+    "description": "This extension allows for syntax highlight of Binsec scripts.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.68.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "binsecscripting",
+            "aliases": ["BinsecScripting", "binsecscripting"],
+            "extensions": [".bsc"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "binsecscripting",
+            "scopeName": "source.bsc",
+            "path": "./syntaxes/binsecscripting.tmLanguage.json"
+        }]
+    }
+}
